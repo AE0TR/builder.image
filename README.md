@@ -1,7 +1,10 @@
-# alpine:builder
+# builder.image
 
-The docker image provides a build envronment based on Alpine:3.12.7. It is used as the basis for
-the other SDR images in this repository.
+These docker files build images that contain build tools.
+They are used in building the other docker images in this repository.
 
 ### usage
-docker build -t alpine:builder .
+```bash
+docker build -t builder:alpine -f Dockerfile.alpine .
+docker build -t builder:debian -f Dockerfile.debian .
+```
