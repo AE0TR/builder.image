@@ -3,7 +3,7 @@ FROM debian:buster
 WORKDIR /var/build
 
 RUN apt update
-RUN apt upgrade
+RUN apt upgrade -y
 RUN apt install -y vim curl git
 RUN apt install -y libusb-dev ncurses-dev
 RUN apt install -y  build-essential make cmake pkgconf autoconf libtool
